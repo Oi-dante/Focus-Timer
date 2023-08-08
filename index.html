@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="music-on">
+<html lang="en" class="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,11 @@
 
 <body>
   <div id="app">
-    <!-- <button id="toggle-mode">
-      <span>Light Mode</span>
+    <button id="toggle-mode">
+      <span class="sr-only">Light Mode</span>
       <i class="ph-bold ph-sun"></i>
       <i class="ph-bold ph-moon"></i>
-    </button> -->
+    </button>
 
     <section id="timer" class="flex">
       <span id="minutes">00</span>
@@ -28,12 +28,24 @@
     </section>
 
     <section id="controls" class="flex">
-      <button class="ph ph-play-circle"></button>
-      <button class="ph ph-pause-circle"></button>
-      <button class="ph ph-timer secondary"></button>
-      <button class="ph ph-stop-circle secondary"></button>
-      <button class="ph ph-speaker-none secondary"></button>
-      <button class="ph ph-speaker-high"></button>
+      <button class="ph ph-play-circle">
+        <span>start counter</span>
+      </button>
+      <button class="ph ph-pause-circle">
+        <span>pause counter</span>
+      </button>
+      <button class="ph ph-timer secondary">
+        <span>adjust counter</span>
+      </button>
+      <button class="ph ph-stop-circle secondary">
+        <span>reset counter</span>
+      </button>
+      <button class="ph ph-speaker-none secondary">
+        <span>star music</span>
+      </button>
+      <button class="ph ph-speaker-high">
+        <span>pause music</span>
+      </button>
     </section>
   </div>
   

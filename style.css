@@ -10,8 +10,42 @@
   --text-color:hsla(var(--hue), 40%, 98%, 1);
   --primary-color:hsla(var(--hue), 100%, 63%, 1);
   --controls-bg-color:hsla(var(--hue), 0%, 14%);
+  --button-secondary:hsla(var(--hue), 40%, 98%, 1);;
 
   font-size: clamp(40%, 1% + 2vw, 62.5%);
+ }
+
+ /* LIGHT/DARK MODE */
+ html.light {
+  --text-color:hsla(var(--hue), 5%, 7%, 1);
+  --bg-color:hsla(var(--hue), 40%, 98%, 1);
+ }
+
+ html.light .ph-sun,
+ html:not(.light) .ph-moon{
+  display: none;
+ }
+
+ #toggle-mode {
+  position: absolute;
+  right: 3.2rem;
+  top: 3.2rem;
+  font-size: 3.2rem;
+  line-height: 0;
+
+  color: var(--text-color);
+ }
+
+ .sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none; 
  }
 
  body{
@@ -56,9 +90,10 @@
  }
 
  .secondary{
-  color: var(--text-color);
+  color: var(--button-secondary);
  }
  
+ /* CONTROLS */
  .running .ph-play-circle,
  .running .ph-timer,
  .music-on .ph-speaker-none,
