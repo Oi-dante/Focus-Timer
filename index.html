@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-  <script type="module" src="script.js"></script>
+  <script type="module" src="src/main.js" defer></script>
 </head>
 
 <body>
@@ -29,22 +29,22 @@
 
     <section id="controls" class="flex">
       <button class="ph ph-play-circle">
-        <span>start counter</span>
+        <span class="sr-only">start counter</span>
       </button>
       <button class="ph ph-pause-circle">
-        <span>pause counter</span>
+        <span class="sr-only">pause counter</span>
       </button>
       <button class="ph ph-timer secondary">
-        <span>adjust counter</span>
+        <span class="sr-only">adjust counter</span>
       </button>
       <button class="ph ph-stop-circle secondary">
-        <span>reset counter</span>
+        <span class="sr-only">reset counter</span>
       </button>
       <button class="ph ph-speaker-none secondary">
-        <span>star music</span>
+        <span class="sr-only">star music</span>
       </button>
       <button class="ph ph-speaker-high">
-        <span>pause music</span>
+        <span class="sr-only">pause music</span>
       </button>
     </section>
   </div>
